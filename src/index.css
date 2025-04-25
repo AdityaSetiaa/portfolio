@@ -1,0 +1,55 @@
+@import "tailwindcss";
+@import "@fortawesome/fontawesome-free/css/all.css";
+
+#root {
+  font-family: Lexend Deca, sans-serif;
+}
+
+.slide {
+  overflow: hidden;
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  --quantity: 8;
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 10%,
+    transparent
+  );
+}
+
+.list {
+  display: flex;
+  gap: 1rem;
+  animation: scroll 10s linear infinite;
+  will-change: transform;
+  animation-play-state: running;
+  
+}
+
+.slide .list .item {
+  color: #000;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.25rem;
+  border-radius: 8px;
+  animation-delay: calc((10s / var(--quantity)) * (var(--zindex)));
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.slide:hover .list .item {
+  animation-play-state: paused!important;
+}
+
+.text{
+  font-size: 12px;
+}
