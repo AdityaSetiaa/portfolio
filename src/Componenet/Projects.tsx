@@ -5,14 +5,15 @@ const Projects = () => {
   return (
     
     
-    <div className="max-w-200 bg-black text-white flex flex-col items-center px-4 py-10 mt-12">
+    <div className="w-screen bg-black text-white flex flex-col  items-center px-4 py-10">
   {/* Title */}
+  
+<div className="w-full max-w-200 text-left mb-10">
+  {/* Projects Grid */}
+  <div className="h-auto w-auto justify-center items-center ">
   <div className="w-full max-w-6xl text-left mb-10">
     <p className="text-3xl font-bold underline text-white">Projects</p>
   </div>
-
-  {/* Projects Grid */}
-  <div className="h-auto w-auto justify-center items-center ">
   {
           projects.map((project) => 
             <div className="h-auto w-auto rounded flex flex-cols justify-center items-center shadow-lg hover:scale-105 transition duration-300 ">
@@ -42,6 +43,7 @@ const Projects = () => {
               </div>
             </div> )
           }
+  </div>
   </div>
 </div>
 
