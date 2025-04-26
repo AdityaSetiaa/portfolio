@@ -13,7 +13,7 @@ const About = () => {
        <p className="text-white font-extralight  pl-4">I'm aditya, a 3rd year BCA student </p>
         
         <p className="text-white font-extralight pl-4">
-          i like to learn new tuff and post about it on my {/*<a href="https://x.com/Adetia108" className="text-cyan-500">Twitter</a>*/}.
+          i like to learn new tuff and post about it on my <a href="https://x.com/Adetia108" className="text-cyan-500">Twitter</a>.
         </p>
        </div>
         
