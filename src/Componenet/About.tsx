@@ -10,7 +10,7 @@ const About = () => {
         <p className="text-8xl text-white p-2">Hello,</p>
         
        <div>
-       <p className="text-white font-extralight  pl-4">I'm aditya, a 3rd year BCA student </p>
+       <p className="text-white font-extralight  pl-4">I'm Aditya, a 3rd year BCA student. </p>
         
         <p className="text-white font-extralight pl-4">
           i like to learn new stuff and post about it on my <a href="https://x.com/Adetia108" className="text-cyan-500">Twitter</a>.
