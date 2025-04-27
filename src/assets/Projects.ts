@@ -8,7 +8,7 @@ export const projects= [
         title: "Blog-it",
         description: "a bloging app to write and upload your blogs",
         image: Blogit,
-        link:"www.google.com",
+        link:"https://github.com/AdityaSetiaa/blog-it.git",
         techStack: ["React", "Tailwind CSS", "JavaScript","appwrite"],
         status:"finished",
         
@@ -18,8 +18,8 @@ export const projects= [
         title: "sol",
         description: "Sol is a Spotify inspired music player app that allows users to listen to their favorite songs.",
         image: sol,
-        link:"www.google.com",
-        techStack: ["React", "Tailwind CSS", "JavaScript"],
+        link:"https://github.com/AdityaSetiaa/sol.git",
+        techStack: ["React", "Tailwind CSS", "TypeScript"],
         status:"finished"
     },
     {
@@ -27,8 +27,8 @@ export const projects= [
         title: "Bookish",
         description: "Bookish is a book e-commerce website that allows users to browse boks online",
         image: bookish,
-        link:"www.google.com",
-        techStack: ["React", "Tailwind CSS", "typescript"],
+        link:"https://github.com/AdityaSetiaa/weather-app.git",
+        techStack: ["Html", "CSS", "javascript"],
         status:"finished"
     }
 ]
