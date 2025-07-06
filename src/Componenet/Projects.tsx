@@ -5,20 +5,21 @@ const Projects = () => {
   return (
     
     
-    <div className="w-screen bg-black text-white flex flex-col  items-center px-4 py-10">
+   <div className="w-full h-auto bg-black text-white flex scroll-hidden flex-col overflow-hidden items-center py-10 overflow-x-hidden">
   {/* Title */}
   
-<div className="w-full max-w-200 text-left mb-10">
+<div className="min-w-50 max-w-200 text-left mb-10 p-2">
   {/* Projects Grid */}
   <div className="h-auto w-auto justify-center items-center ">
-  <div className="w-full max-w-6xl text-left mb-10">
-    <p className="text-3xl font-bold underline text-white">Projects</p>
+  <div className="w-full text-left mb-10">
+    <p className="text-3xl font-bold underline text-white p-4">Projects</p>
   </div>
+  <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 justify-center gap-4">
   {
           projects.map((project) => 
-            <div className="h-auto w-auto rounded flex flex-cols justify-center items-center shadow-lg hover:scale-105 transition duration-300 ">
+            <div className="h-auto w-auto rounded flex flex-cols justify-center items-center shadow-lg hover:scale-105 transition duration-300 hover:border-2 hover:border-white ">
               <div className="mb-12 " >
-                <h1><img className="flex h-auto w-auto" src={project.image}/> </h1>
+                <img className="flex h-auto w-auto" src={project.image}/>
                 <div className=""><h1 className="text-5xl text-white mt-4">{project.title}</h1>
                 <span className="flex justify-end items-center">
                   {
@@ -43,6 +44,7 @@ const Projects = () => {
               </div>
             </div> )
           }
+          </div>
   </div>
   </div>
 </div>
