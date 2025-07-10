@@ -1,7 +1,21 @@
+import { useLocation } from "react-router-dom";
+
 const ContactMe = () => {
+
+  
+
+
+  const location = useLocation();
+  const isFullPage = location.pathname === "/contact";
+
   return (
     <>
-    <div className="w-auto h-screen flex flex-col items-center justify-center overflow-hidden bg-black   ">
+    <div className={`w-auto transition-all duration-500 ease-in-out ${
+  isFullPage
+    ? 'h-screen flex flex-col items-center justify-center overflow-hidden bg-black'
+    : 'h-1/2 flex flex-col items-center justify-center overflow-hidden bg-black'
+}`}
+>
   <div className="w-full h-full max-w-5xl flex flex-col lg:flex-row items-center justify-center gap-14 border rounded-md  mb-auto">
     
     {/* Contact Info */}
@@ -16,8 +30,9 @@ const ContactMe = () => {
           href="mailto:adityasetia@outlook.com"
           className="underline text-cyan-500"
         >
-          adityasetia@outlook.com
+          : adityasetia@outlook.com
         </a>
+        <h1 className="flex mr-4"><i className="fa-solid fa-phone text-white font-extralight mr-2"></i><p>: 91+ 9256575961</p></h1>
       </p>
 
       <div className="flex flex-col justify-center items-center mt-4">
@@ -30,7 +45,7 @@ const ContactMe = () => {
     </div>
 
     {/* Contact Form */}
-    <form className="flex flex-col gap-4 w-full lg:w-1/2 font-extralight font-sans">
+    {/* <form className="flex flex-col gap-4 w-full lg:w-1/2 font-extralight font-sans">
       <div className="flex flex-col md:flex-row gap-4 w-full">
         <input
           type="text"
@@ -55,7 +70,7 @@ const ContactMe = () => {
       >
         Send
       </button>
-    </form>
+    </form> */}
   </div>
 </div>
 

@@ -26,7 +26,7 @@ const Techstack = () => {
      
       <div className="h-auto w-screen flex mt-30 flex-col">
       <div className="h-auto w-auto flex flex-wrap">
-      <p className="text-3xl font-bold underline text-white p-4  flex flex-wrap">Tools</p>
+      <p className="text-3xl font-bold underline text-white p-4  flex flex-wrap ml-4">Tools</p>
       </div>
         <div className=" p-2 flex  border-2 border-slate-300 shadow-lg slide" >
           
