@@ -25,14 +25,16 @@ const ContactMe = () => {
         If you have any queries, you can reach me out at
       </p>
       <p className="text-white font-extralight">
+        <div className="flex">
         <i className="fa fa-envelope text-white mr-2"></i>
-        <a
+        :<a
           href="mailto:adityasetia@outlook.com"
           className="underline text-cyan-500"
         >
-          : adityasetia@outlook.com
+           adityasetia@outlook.com
         </a>
-        <h1 className="flex mr-4"><i className="fa-solid fa-phone text-white font-extralight mr-2"></i><p>: 91+ 9256575961</p></h1>
+        </div>
+        <h1 className="flex mr-4"><i className="fa-solid fa-phone text-white font-extralight mr-2"></i><p>: 91 9256575961</p></h1>
       </p>
 
       <div className="flex flex-col justify-center items-center mt-4">
@@ -75,7 +77,7 @@ const ContactMe = () => {
 </div>
 
     
-  <footer className='p-7 w-auto  h-20 text-white  bg-black'>Made by Adi </footer>
+  <footer className='p-7 w-auto  h-20 text-white mt-10  bg-black'>Made by Adi </footer>
   </>
   );
 };
