@@ -14,14 +14,14 @@ const Projects = () => {
   <div className="w-full text-left mb-10">
     <p className="text-3xl font-bold underline text-white p-4">Projects</p>
   </div>
-  <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 justify-center gap-4">
+  <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 justify-center gap-4 m-2">
   {
-          projects.map((project) => 
-            <div className="h-auto w-auto rounded flex flex-cols justify-center items-center shadow-lg hover:scale-105 transition duration-300 hover:border-2 hover:border-white ">
+          projects.map((project,i) => 
+            <div key={i} className="h-auto w-auto rounded flex flex-cols justify-center items-center shadow-lg hover:scale-105 transition duration-300 hover:border-2 hover:border-white ">
               <div className="mb-12 " >
                 <img className="flex h-auto w-auto" src={project.image}/>
-                <div className=""><h1 className="text-5xl text-white mt-4">{project.title}</h1>
-                <span className="flex justify-end items-center">
+                <div className=""><h1 className="text-3xl text-white mt-4 p-3">{project.title}</h1>
+                <span className="flex justify-end items-center m-4">
                   {
                   project.status === "finished" ?
                   <span className="text-green-800 font-normal bg-green-500 rounded justify-center text-center px-3">Finished</span> :
@@ -32,15 +32,18 @@ const Projects = () => {
                   <span className="text-red-500 font-extralight justify-center text-center">Unknown</span>
                   }
                   </span></div>
-                <p className="text-white font-extralight">{project.description}</p>
-                <p className="text-white font-extralight">
+                <p className="text-white font-extralight p-4">{project.description}</p>
+                <p className="text-white font-extralight p-4">
                   {
-                    project.techStack.map((tech:any) => 
-                      <span className="text-cyan-500 ">{tech} | </span>
+                    project.techStack.map((tech:any,i) => 
+                      <span key={i} className="text-cyan-500 ">{tech} | </span>
                     )
                   }
                   </p>
                 <a href={project.link} className="text-white"><i className="fa-brands fa-github p-4 text-3xl hover:text-slate-400"></i></a>
+                {
+                  project.MainLink === "" ? "": <a href={project.MainLink}><i className="fa-solid fa-link p-4 text-2xl hover:text-slate-400"></i></a>
+                }
               </div>
             </div> )
           }
