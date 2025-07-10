@@ -19,7 +19,7 @@ const ContactMe = () => {
   <div className="w-full h-full max-w-5xl flex flex-col lg:flex-row items-center justify-center gap-14 border rounded-md  mb-auto">
     
     {/* Contact Info */}
-    <div className="flex flex-col gap-3 w-full lg:w-1/2 m-5">
+    <div className="flex flex-col gap-3 w-full lg:w-1/2 mb-10 p-5">
       <p className="text-white font-bold underline text-lg">Get in touch:</p>
       <p className="text-white font-extralight">
         If you have any queries, you can reach me out at
@@ -77,7 +77,7 @@ const ContactMe = () => {
 </div>
 
     
-  <footer className='p-7 w-auto  h-20 text-white mt-10  bg-black'>Made by Adi </footer>
+  <footer className='p-7 w-auto  h-20 text-white  bg-black'>Made by Adi </footer>
   </>
   );
 };
