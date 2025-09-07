@@ -14,7 +14,7 @@ const About = () => {
         
         <p className="text-white font-extralight pl-4">
           i like to learn new stuff and post about it on my <a href="https://x.com/Adetia108" className="text-cyan-500">Twitter</a>.</p>
-          <p className="text-white font-extralight pl-4">Currently I'm learning GoLang to expand myself to backend.</p>
+          
        </div>
         
       </div>
