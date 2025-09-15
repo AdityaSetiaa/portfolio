@@ -34,7 +34,7 @@ const ContactMe = () => {
            adityasetia@outlook.com
         </a>
         </div>
-        <h1 className="flex mr-4"><i className="fa-solid fa-phone text-white font-extralight mr-2"></i><p>: 91 9256575961</p></h1>
+       
       </p>
 
       <div className="flex flex-col justify-center items-center mt-4">
